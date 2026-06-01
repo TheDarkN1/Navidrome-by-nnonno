@@ -4,9 +4,7 @@ I created a Navidrome server for song streaming
 
 # 🎵 Mon Serveur Navidrome
 
-<p align="center">
-  <img src="[https://www.navidrome.org/logo.png](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.aQQe8PAGNA_UA7wzvX9gAQHaHa%3Fpid%3DApi&f=1&ipt=2cfde06bc2190d3f5cb39828580b0d995098d1224426c6aaa6d8769bc7bc5377&ipo=images)" width="120" alt="Navidrome Logo">
-</p>
+
 
 <p align="center">
   <strong>Serveur de streaming musical auto-hébergé basé sur Navidrome</strong>
