@@ -30,8 +30,8 @@ Fonctionnalités :
 * Gestion des playlists
 * Compatible Subsonic
 * Applications mobiles Android et iOS
-* Interface web moderne
-* Accès distant sécurisé via reverse proxy
+* Interface web moderne en passant par Feishin
+* Accès distant sécurisé via reverse proxy (Pangolin)
 
 ---
 
@@ -44,6 +44,13 @@ Ajoutez ici vos captures d'écran :
 ---
 
 ## 🚀 Quick Start
+
+### Installation de docker 
+
+Mettre à jour les paquets 
+
+
+
 
 ### Docker Compose
 
