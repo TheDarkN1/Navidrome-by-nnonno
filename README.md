@@ -126,7 +126,7 @@ lsblk
 Exemple :
 
 sdb      8:16   0   1T  0 disk
-└─sdb1   8:17   0   1T  0 part
+sdb1     8:17   0   1T  0 part
 
 Montage du disque
 
