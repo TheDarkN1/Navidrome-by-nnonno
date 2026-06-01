@@ -108,28 +108,73 @@ docker --version
 docker compose version
 ```
 
+### Préparation de l'environnement
+
+Création du dossier de données
+le dossier qui contiendra la configuration et la base de données de Navidrome :
+
+```bash
+mkdir -p /srv/navidrome/data
+```
+
+Identification du disque
+
+```bash
+lsblk
+```
+
+Exemple :
+
+sdb      8:16   0   1T  0 disk
+└─sdb1   8:17   0   1T  0 part
+
+Montage du disque
+
+```bash
+mount /dev/sdb1 /mnt/music
+```
+Montage automatique au démarrage
+
+Récupérer l'UUID du disque :
+
+```bash
+blkid
+```
+
+Ajouter l'entrée correspondante dans le fichier /etc/fstab :
+
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx /mnt/music ext4 defaults 0 2
+
+Tester la configuration :
+
+```bash
+mount -a
+```
+
+
 ### Docker Compose
 
 Créer un fichier `docker-compose.yml`
 
 ```yaml
+
 services:
   navidrome:
     image: deluan/navidrome:latest
     container_name: navidrome
+    restart: unless-stopped
 
     ports:
       - "4533:4533"
 
     environment:
       ND_SCANSCHEDULE: 1h
-      ND_LOGLEVEL: info
+      ND_WATCHFOLDER: "true"
 
     volumes:
-      - ./data:/data
-      - /music:/music
+      - /srv/navidrome/data:/data
+      - /mnt/music:/music:ro
 
-    restart: unless-stopped
 ```
 
 ### Lancement
