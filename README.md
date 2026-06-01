@@ -47,15 +47,66 @@ Ajoutez ici vos captures d'écran :
 
 ### Installation de docker 
 
-Mettre à jour les paquets 
+Mettre à jour les paquets et installer les dépendances nécessaires 
 
 ```bash
 sudo apt update
 sudo apt install -y ca-certificates curl gnupg
 ```
+Créer le dossier des clés
 
+```bash
+sudo install -m 0755 -d /etc/apt/keyrings
+```
 
+Télécharger la clé GPG
 
+```bash
+curl -fsSL https://download.docker.com/linux/debian/gpg | \
+sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+Autoriser la lecture de la clé
+
+```bash
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+```
+Ajouter le dépôt officiel Docker
+
+```bash
+echo \
+"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+https://download.docker.com/linux/debian \
+$(. /etc/os-release && echo $VERSION_CODENAME) stable" | \
+sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+Recharger les dépôts
+
+```bash
+sudo apt update
+```
+Installer Docker
+
+```bash
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+Activer Docker au démarrage
+
+```bash
+sudo systemctl enable docker
+```
+Démarrer Docker immédiatement
+
+```bash
+sudo systemctl enable docker
+```
+
+Vérifier l'installation
+
+```bash
+docker --version
+docker compose version
+```
 
 ### Docker Compose
 
