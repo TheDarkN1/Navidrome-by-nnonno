@@ -247,3 +247,12 @@ docker logs -f navidrome
 ## 📄 Licence
 
 Projet personnel réalisé dans le cadre de l'auto-hébergement et de l'apprentissage de l'administration système.
+
+Mon instagram au cas ou.
+
+<a href="https://www.instagram.com/nnonno_917/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+         alt="Instagram"
+         width="32"
+         height="32">
+</a>
