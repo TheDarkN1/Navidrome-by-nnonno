@@ -137,6 +137,10 @@ blkid
 
 Ajouter l'entrée correspondante dans le fichier /etc/fstab :
 
+```bash
+nano /etc/fstab
+```
+
 UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx /mnt/music ext4 defaults 0 2
 
 Tester la configuration :
