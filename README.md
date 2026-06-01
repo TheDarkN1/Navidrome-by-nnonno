@@ -114,7 +114,7 @@ Création du dossier de données
 le dossier qui contiendra la configuration et la base de données de Navidrome :
 
 ```bash
-mkdir -p /srv/navidrome/data
+mkdir -p /srv/navidrome
 ```
 
 Identification du disque
@@ -153,6 +153,12 @@ mount -a
 ### Docker Compose
 
 Créer un fichier `docker-compose.yml`
+
+dans 
+
+```bash
+cd /srv/navidrome
+```
 
 ```yaml
 
