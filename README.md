@@ -204,16 +204,19 @@ http://IP_DU_SERVEUR:4533
 | Docker    | Conteneurisation       |
 | Navidrome | Serveur musical        |
 | Pangolin  | Accès distant sécurisé |
+| Feishin   | Player interface web   |
+
 
 ---
 
 ## 📂 Structure des dossiers
 
 ```text
-/opt/navidrome/
+/srv/navidrome/
 ├── docker-compose.yml
 ├── data/
-└── music/
+/mnt/music
+├── music/
 ```
 
 ---
