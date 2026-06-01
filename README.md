@@ -38,7 +38,6 @@ Fonctionnalités :
 Ajoutez ici vos captures d'écran :
 
 ![Accueil](screenshots/home.png)
-
 ---
 
 ## 🚀 Quick Start
