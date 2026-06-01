@@ -49,6 +49,11 @@ Ajoutez ici vos captures d'écran :
 
 Mettre à jour les paquets 
 
+```bash
+sudo apt update
+sudo apt install -y ca-certificates curl gnupg
+```
+
 
 
 
