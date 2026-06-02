@@ -37,7 +37,7 @@ Fonctionnalités :
 
 ## 📸 Captures d'écran
 
-Ajoutez ici vos captures d'écran :
+L'interface de navidrome :
 
 ![Accueil](screenshots/home.png)
 ---
