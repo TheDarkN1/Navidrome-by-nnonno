@@ -12,6 +12,8 @@ I created a Navidrome server for song streaming
   <strong>Serveur de streaming musical auto-hébergé basé sur Navidrome</strong>
 </p>
 
+##⚠️ Seuls les fichiers audio obtenus légalement et dont l'utilisateur possède les droits d'utilisation doivent être ajoutés à la bibliothèque.
+
 <p align="center">
   <img src="https://img.shields.io/badge/Navidrome-Latest-green" alt="Navidrome">
   <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
@@ -27,6 +29,7 @@ Ce projet permet d'héberger une bibliothèque musicale personnelle accessible d
 Fonctionnalités :
 
 * Streaming audio via Navidrome
+* Ajout de nouvelles musiques 
 * Gestion des playlists
 * Compatible Subsonic
 * Applications mobiles Android et iOS
