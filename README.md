@@ -259,7 +259,7 @@ Depuis Windows :
 | Docker    | Conteneurisation       |
 | Navidrome | Serveur musical        |
 | Pangolin  | Accès distant sécurisé |
-| Feishin   | Player interface web   |
+| Feishin   | Player application win |
 
 
 ---
@@ -278,7 +278,7 @@ Depuis Windows :
 
 ## 🔒 Sécurité
 
-* Reverse Proxy
+* Reverse Proxy (0 trust)
 * HTTPS
 * Authentification Navidrome
 * Accès distant sécurisé
