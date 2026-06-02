@@ -12,7 +12,7 @@ I created a Navidrome server for song streaming
   <strong>Serveur de streaming musical auto-hébergé basé sur Navidrome</strong>
 </p>
 
-##⚠️ Seuls les fichiers audio obtenus légalement et dont l'utilisateur possède les droits d'utilisation doivent être ajoutés à la bibliothèque.
+## ⚠️ Seuls les fichiers audio obtenus légalement et dont l'utilisateur possède les droits d'utilisation doivent être ajoutés à la bibliothèque.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Navidrome-Latest-green" alt="Navidrome">
