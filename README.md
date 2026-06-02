@@ -250,6 +250,8 @@ docker logs -f navidrome
 
 Projet personnel réalisé dans le cadre de l'auto-hébergement et de l'apprentissage de l'administration système.
 
+**nnonno_917**
+
 Mon instagram au cas ou.
 
 <a href="https://www.instagram.com/nnonno_917/" target="_blank" rel="noopener noreferrer">
