@@ -192,6 +192,59 @@ docker compose up -d
 http://IP_DU_SERVEUR:4533
 ```
 
+### Partage samba pour ajouter les ***musiques***
+
+Installation de Samba
+
+```bash
+apt update
+apt install samba -y
+```
+
+Créer l'utilisateur dédié à la gestion de la musique :
+
+```bash
+useradd -M music
+smbpasswd -a music
+```
+
+Attribuer les droits sur la bibliothèque musicale :
+
+```bash
+chown -R music:music /mnt/music
+chmod -R 775 /mnt/music
+```
+
+Configuration du partage 
+
+Ajouter à la fin du fichier `/etc/samba/smb.conf `:
+```bash
+nano /etc/samba/smb.conf
+```
+La configuration suivante : 
+
+```bash
+[Music]
+path = /mnt/music
+browseable = yes
+read only = no
+guest ok = no
+valid users = music
+create mask = 0664
+directory mask = 0775
+```
+
+Redémarrage de Samba
+
+```bash
+systemctl restart smbd
+systemctl enable smbd
+```
+Depuis Windows :
+```texte
+\\IP_DU_SERVEUR\Music
+```
+
 ---
 
 ## ⚙️ Infrastructure
